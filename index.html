@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/7f73f1181c.js" crossorigin="anonymous"></script>
+    <title>KJ Installations</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="./pictures/kjlogo.jpg">
+        <nav class="nav-menu">
+            <ul>
+                <li>
+                    <a href="#" class="nav-links">Home</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-links">Installations</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-links">About</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-links">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="burger">
+            <i class="fa-solid fa-bars fa-6x"></i>
+        </div>
+    </header>
+    <script src="app.js"></script>
+    <main>
+        <div class="hero">
+            <img class="hero-img" src="./pictures/kj-hero2.jpg" alt="hero image">
+        </div>
+        <section class="statement">
+            <h1>AUDIO-VISUAL & VIDEO CONFERENCING INSTALLATIONS FOR YOUR BUSINESS.</h1>
+        </section>
+        <section class="skills">
+            <article class="installation">
+                <img class="installation-pic" src="./pictures/cleancut.jpg" alt="installation picture">
+                <div class="installation-text skills-text">
+                    <h2>Clean-cut installations,</h2>
+                    <h3>with a 'measure twice, cut once' approach.</h3>
+                </div>
+            </article>
+            <article class="detail">
+                <img class="detail-pic" src="./pictures/detail.jpg" alt="picture displaying attention to detail"/>
+                <div class="detail-text skills-text">
+                    <h2>Attention to detail</h2>
+                    <h3>is what I take pride in. High quality from start to finish is what your business deserves.</h3>
+                </div>
+            </article>
+            <article class="troubleshooting">
+                <img class="troubleshooting-pic" src="./pictures/troubleshooting.jpg" alt="troubleshooting picture">
+                <div class="troubleshooting-text skills-text"> 
+                    <h2>Troubleshooting</h2>
+                    <h3>Audio-Visual & network related problems.</h3> 
+                </div>
+            </article>
+        </section>
+        <section class="get-in-touch">
+            <h2>Get in Touch</h2>
+            <form id="form">
+                <label for="name">Name</label><br>
+                <input type="text" name="name" id="name"><br><br>
+                <label for="email">Email</label><br>
+                <input type="email" name="email" id="email"><br>
+                <label for="message">Message</label><br><br>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message here"></textarea><br>
+                <input type="submit" value="submit">
+            </form>
+        </section>   
+    </main>
+    <footer>
+        <p>&copy; Kaya Joseph 2022</p>
+    </footer>
+</body>
+<script>
+    const form = document.getElementById('form')
+
+    form.addEventListener('submit',function(event){
+        event.preventDefault() // prevents the form from auto-submitting
+
+        let name = document.getElementById('name').value
+        
+        console.log(name);
+
+        let email = document.getElementById('email').value
+
+        console.log(email);
+
+        if (name.length == 0) {
+            alert("Please enter your name")
+        } else if (name != NaN && name === typeof(string)) {
+            alert("Please only enter character between A-Z");
+        } else if (email.length == 0) {
+            alert("Please enter your email address")
+        } else {
+            alert('Thanks for getting in contact!');
+        }
+    })
+</script>
+</html>

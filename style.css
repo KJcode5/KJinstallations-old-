@@ -1,0 +1,283 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: sans-serif;
+}
+
+/* HEADER START */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 186px;
+    width: 100%;
+    padding: 0rem 2rem;
+    /* position: fixed; */
+    background-color: #fff;
+}
+
+.logo {
+    height: 60%;
+    width: auto;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.nav-links {
+    list-style: none;
+    color: black;
+    text-decoration: none;
+    transition: 0.7s ease;
+    margin: 2rem;
+    font-size: 3rem;
+}
+
+.nav-links:hover {
+    color: red;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1440px) {
+    .burger {
+        display: block;
+
+    }
+    
+    .nav-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        padding: 1rem 2rem;
+        left: -1000%;
+        top: 186px;
+        height: 500px;
+        width: 100%;
+        background-color: #fff;
+        text-align: center;
+        transition: 0.3s;
+        border-top: solid black 1px;
+        border-bottom: solid black 1px;
+    }
+
+    .nav-menu ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    body {
+        width: 80%;
+        margin: auto;
+    }
+
+    /* .skills article img {
+        width: 80%;
+        margin: auto;
+    }
+
+    .skills article div {
+        width: 80%;
+        margin:  auto
+    } */
+}
+
+
+/* HEADER END */
+
+/* ************************************ */
+
+/* MAIN START */
+
+/* MAIN END */
+
+/* ************************************ */
+
+/* HERO START */
+.hero {
+    background-color: yellow;
+    width: 100%;
+    height: 1140px
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+}
+/* HERO END */
+
+/* ************************************ */
+
+/* STATEMENT START */
+.statement {
+    height: 500px;
+    text-align: center;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.statement h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 5rem;
+}
+
+/* STATEMENT END */
+
+/* ************************************ */
+
+/* SKILLS START */
+.skills {
+    width: 100%;
+}
+
+.skills article {
+    margin-bottom: 2rem;
+}
+
+.skills article h2 {
+    font-size: 3rem;
+}
+
+.skills article h3 {
+    font-size: 2rem;
+}
+
+.skills-text {
+    text-align: center;
+    padding-top: 1rem;
+}
+
+
+.installation {
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+}
+
+.installation-pic {
+    width: 100%;
+    height: 80%;
+}
+
+.installation-text {
+    width: 100%;
+    height: 20%;
+    background-color: orange;
+}
+
+.detail {
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+}
+
+.detail-pic {
+    width: 100%;
+    height: 80%;
+}
+
+.detail-text {
+    width: 100%;
+    height: 20%;
+    background: aqua;
+}
+
+.troubleshooting {
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+}
+
+.troubleshooting-pic {
+    width: 100%;
+    height: 80%;
+}
+
+.troubleshooting-text {
+    width: 100%;
+    height: 20%;
+    background: pink;
+}
+
+/* SKILLS END */
+
+/* ************************************ */
+
+/* GET IN TOUCH START */
+
+.get-in-touch h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+.get-in-touch {
+    padding: 2rem 1rem;
+    margin-top: 5rem;
+    background-color: rgb(230, 188, 110);
+    text-align: center;
+}
+
+label {
+    font-size: 2rem;
+}
+
+input {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 80%;
+    height: 50px;
+    border-radius: 8px;
+}
+
+textarea {
+    margin-top: 10px;
+    width: 80%;
+    border-radius: 8px;
+    padding-top: 10px;
+    padding-left: 10px;
+    resize: none;
+}
+
+input[type=submit] {
+    margin-top: 40px;
+    background-color: black;
+    color: white;
+    height: 50px;
+    width: 20%;
+}
+
+/* GET IN TOUCH END */
+
+/* ************************************ */
+
+/* FOOTER START */
+footer {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;   
+}
+
+
+/* FOOTER END */
+
+/* ************************************ */
